@@ -431,9 +431,12 @@ body {
 .modal__button-close {
   width: 24px;
   height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 24px;
+  right: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--cornflower);
   border-radius: 50%;
@@ -441,5 +444,4 @@ body {
 .modal__close-icon {
   width: 8px;
   height: 8px;
-  padding: 8px;
 }
