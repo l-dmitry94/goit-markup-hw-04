@@ -87,6 +87,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 24px 0;
 }
 .header__menu-link:hover, .header__menu-link:focus {
@@ -117,6 +118,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__contact-link:hover, .header__contact-link:focus {
   color: var(--ocean);
@@ -134,6 +136,7 @@ body {
 }
 
 .hero {
+  max-width: 1440px;
   background-color: var(--navyblue);
   background-image: linear-gradient(var(--grey), var(--grey)), url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
@@ -163,7 +166,7 @@ body {
   background-color: var(--iris);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
-  transition: background-color 0.3s linear;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   margin: 0 auto;
 }
