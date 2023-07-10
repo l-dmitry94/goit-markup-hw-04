@@ -183,9 +183,12 @@ body {
 }
 .features__list-item {
   flex-basis: calc((100% - 72px) / 4);
+  height: 212px;
 }
 .features__list-block-icon {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
   background: var(--cloud);
   padding: 24px 0;
@@ -238,26 +241,36 @@ body {
   flex-basis: calc((100% - 72px) / 4);
   background-color: var(--white);
   border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .team__social-list {
   margin-top: 8px;
 }
 .team__item-socials-link {
   display: flex;
-  display: flex;
   justify-content: space-between;
 }
 
 .socials__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 24px;
+}
+.socials__list-item:hover .socials__list-link {
+  background-color: var(--green);
 }
 .socials__list-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--iris);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 12px;
 }
 
 .item-info {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .item-title {
@@ -279,11 +292,7 @@ body {
 }
 
 .icon-social {
-  fill: var(--iris);
-  transition: fill 0.2s linear;
-}
-.icon-social:hover {
-  fill: var(--green);
+  fill: var(--cloud);
 }
 
 .customers {
