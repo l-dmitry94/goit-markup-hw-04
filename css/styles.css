@@ -449,6 +449,7 @@ body {
   border-top: none;
   -moz-text-align-last: left;
        text-align-last: left;
+  padding: 32px 16px;
 }
 
 .modal__overlay {
